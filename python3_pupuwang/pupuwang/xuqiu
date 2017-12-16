@@ -1,0 +1,9 @@
+铺铺旺网站
+    |--找店选址     //ul[@class="u-soujiecontul clearfix reset_width reset_height"]
+        |--求租标题：//div[@class="opportunity-title"]/text()
+        |--求租链接：
+        |--求租行业：//ul[@class="detail-detail"]//li[3]/div[1]/text()
+        |--发布时间：//div[@class="shop-data"]//span[2]/text()
+        |--面积大小：//ul[@class="detail-detail"]//li[1]/div[1]/text()
+        |--期望租金：//ul[@class="detail-detail"]//li[2]/div[1]/text()
+        |--详情描述：//div[@class="Candicine-content-content"]/p/text()
