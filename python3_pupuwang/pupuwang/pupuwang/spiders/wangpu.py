@@ -15,7 +15,7 @@ class WangpuSpider(CrawlSpider):
         # 列表页
         Rule(LinkExtractor(allow=(r'all')),follow=True),
         # 详情页
-        Rule(LinkExtractor(allow=(r'details/\d+')),callback='parse_item'),
+        Rule(LinkExtractor(allow=(r'details/\d+')),callback='parse_item',follow=True),
     )
 
     def parse_item(self, response):
